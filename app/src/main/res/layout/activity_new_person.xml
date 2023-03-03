@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".NewPerson">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opret Person"
+        android:textColor="#008484"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Name: "
+                android:textColor="#008484"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Tlf: "
+                android:textColor="#008484"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Job: "
+                android:textColor="#008484"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="#008484" />
+
+            <EditText
+                android:id="@+id/edtTlf"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="#008484" />
+
+            <EditText
+                android:id="@+id/edtJob"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="#008484" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Hårfarve: "
+            android:textColor="#008484"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            >
+
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/spnHairColor"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+        <RadioGroup
+            android:id="@+id/rbGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/rbtKat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kat"
+                android:layout_margin="10dp"/>
+            <RadioButton
+                android:id="@+id/rbtHund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hund"
+                android:layout_margin="10dp"/>
+            <RadioButton
+                android:id="@+id/rbtFugl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fugl"
+                android:layout_margin="10dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set favorit"
+                android:textColor="#008484"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <ToggleButton
+                android:id="@+id/tbtnIsFavorit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSaved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#008484"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Gem"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tilbage"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
